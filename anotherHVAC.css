@@ -1,0 +1,65 @@
+.titleBanner {
+    background-color: rgb(150, 24, 47);
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+    border-bottom: solid black;
+    padding: 2em;
+}
+
+.titleBanner aside {
+    font-size: 20px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.introDiv {
+    background-image: url("images/team.jpg");
+    background-size: contain;
+}
+
+.introDiv h1 {
+    text-align: center;
+}
+
+
+/* li {
+    display: flex;
+} */
+
+.services {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #67c2e0;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    ;
+}
+
+.services img {
+    border-radius: 12px;
+}
+
+.image-wrapper {
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* responsive design */
+
+@media only screen and (max-device-width: 600px) {
+    .services {
+        flex-direction: column;
+        background-color: rgb(63, 9, 19);
+    }
+}
