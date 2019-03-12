@@ -20,7 +20,25 @@ estimate()
 console.log(estimate);
 
 const advertise = document.getElementById("message")
-
+    // var clickCount = addEventListener("click")
 advertise.addEventListener("click", function(event) {
-    alert("you found the secret message!");
+    // alert("Call Us Today!");
+
+    advertise.classList.remove("introDiv");
+    advertise.classList.add("introDiv2");
+    // if (clickCount > 2) {
+
+    //     advertise.classList.remove("introDiv2");
+    //     advertise.classList.add("introDiv");
+    // }
+
+});
+
+const solicit = document.getElementById("targetDiv")
+
+
+solicit.addEventListener("click", function(event) {
+    solicit.classList.remove("popup");
+    solicit.classList.add("show");
+
 });

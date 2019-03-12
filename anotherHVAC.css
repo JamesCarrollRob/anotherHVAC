@@ -22,6 +22,10 @@
     background-size: contain;
 }
 
+.introDiv2 {
+    background-color: coral;
+}
+
 .introDiv h1 {
     text-align: center;
 }
@@ -64,6 +68,15 @@
     /* top: 20px; */
     /* padding-top: 2em;
     padding-bottom: 2em; */
+}
+
+.popup {
+    border: solid black;
+    /* visibility: hidden; */
+}
+
+.show {
+    border: solid red;
 }
 
 h1 {
