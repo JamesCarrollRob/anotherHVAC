@@ -50,16 +50,57 @@
     padding: 1em;
 }
 
+.heading-wrapper {
+    background-color: rgb(193, 13, 13);
+}
+
+.contactForm {
+    position: relative;
+    padding: 2em;
+    border: solid black;
+    background-color: aqua;
+    /* right: 20px;
+    left: 20px; */
+    /* top: 20px; */
+    /* padding-top: 2em;
+    padding-bottom: 2em; */
+}
+
 h1 {
     text-align: center;
 }
 
+form {
+    background-color: lightgray;
+}
+
+
+/* .card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.card-deck .card {
+    display: block;
+    flex-basis: 33.3%; */
+
+
+/* change this value for each breakpoint*/
+
+
+}
 
 /* responsive design */
-
 @media only screen and (max-device-width: 600px) {
     .services {
         flex-direction: column;
         background-color: rgb(63, 9, 19);
+    }
+    
+    .card-columns {
+        display: flex;
+        flex-direction: column;
     }
 }
