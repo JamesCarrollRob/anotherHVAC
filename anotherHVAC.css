@@ -47,7 +47,7 @@
 }
 
 .services img {
-    border-radius: 12px;
+    border-radius: 100%;
 }
 
 .image-wrapper {
@@ -103,15 +103,13 @@ form {
 /* change this value for each breakpoint*/
 
 
-}
-
 /* responsive design */
+
 @media only screen and (max-device-width: 600px) {
     .services {
         flex-direction: column;
         background-color: rgb(63, 9, 19);
     }
-    
     .card-columns {
         display: flex;
         flex-direction: column;

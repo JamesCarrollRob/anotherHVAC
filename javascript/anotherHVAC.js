@@ -4,7 +4,9 @@ console.log("test message");
 
 
 /*Simple animation using jquery*/
-$("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp("2000");
+setInterval(function() {
+    $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000).slideLeft();
+}, 7000);
 
 /* Start of logic for online estimate*/
 
@@ -34,7 +36,7 @@ advertise.addEventListener("click", function(event) {
 
 });
 
-const solicit = document.getElementById("targetDiv")
+const solicit = document.getElementById("targetDiv");
 
 
 solicit.addEventListener("click", function(event) {
@@ -42,3 +44,21 @@ solicit.addEventListener("click", function(event) {
     solicit.classList.add("show");
 
 });
+
+$("#popupGone").click(function() {
+    $("#targetDiv").hide();
+});
+
+$("#formSubmit").click(function() {
+    alert("thanks for submiting!");
+
+});
+
+
+// $const buttonClick = document.getElementById("popupGone");
+// $const hideDiv = document.getElementsByClassName("popup, show");
+
+// buttonClick.addEventListener("click", function(event) {
+//     hideDiv.style.display = "none";
+
+// });
