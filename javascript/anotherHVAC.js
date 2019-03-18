@@ -1,11 +1,12 @@
-// javascript file
-/*test message in console to insure js file is linked properly*/
+// javascript file for main page, index.html
+
+/*console message to test if script is linked properly*/
 console.log("test message");
 
 
-/*Simple animation using jquery*/
+/*Simple animation using jquery using the setInterval method*/
 setInterval(function() {
-    $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000).slideLeft();
+    $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000);
 }, 7000);
 
 /* Start of logic for online estimate*/
@@ -36,6 +37,7 @@ advertise.addEventListener("click", function(event) {
 
 });
 
+// Start of code for removal of popup div upon button click
 const solicit = document.getElementById("targetDiv");
 
 
@@ -45,14 +47,12 @@ solicit.addEventListener("click", function(event) {
 
 });
 
+// Function targets advertisement and makes it dissapear on button click 
 $("#popupGone").click(function() {
     $("#targetDiv").hide();
 });
 
-$("#formSubmit").click(function() {
-    alert("thanks for submiting!");
 
-});
 
 
 // $const buttonClick = document.getElementById("popupGone");
