@@ -1,51 +1,32 @@
 // javascript file for main page, index.html
 
-/*console message to test if script is linked properly*/
-console.log("test message");
+/******console message to test if script is linked properly********/
+console.log("test message 1");
 
 
-/*Simple animation using jquery using the setInterval method*/
+/***Simple animation at top of page using jquery using the setInterval method***/
 setInterval(function() {
     $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000);
 }, 7000);
 
-/* Start of logic for online estimate*/
 
-var x = 5;
-var y = 6;
 
-function estimate() {
 
-    var result = x + y;
-    return result;
-}
-estimate()
-console.log(estimate);
 
+//***This function uses an event listener to change the class of a div to change the background image
+//**** Introdiv2 is hidden until area is clicked.***/
 const advertise = document.getElementById("message")
-    // var clickCount = addEventListener("click")
+
 advertise.addEventListener("click", function(event) {
-    // alert("Call Us Today!");
+
 
     advertise.classList.remove("introDiv");
     advertise.classList.add("introDiv2");
-    // if (clickCount > 2) {
 
-    //     advertise.classList.remove("introDiv2");
-    //     advertise.classList.add("introDiv");
-    // }
 
 });
 
-// Start of code for removal of popup div upon button click
-const solicit = document.getElementById("targetDiv");
 
-
-solicit.addEventListener("click", function(event) {
-    solicit.classList.remove("popup");
-    solicit.classList.add("show");
-
-});
 
 // Function targets advertisement and makes it dissapear on button click 
 $("#popupGone").click(function() {
@@ -62,3 +43,27 @@ $("#popupGone").click(function() {
 //     hideDiv.style.display = "none";
 
 // });
+
+
+// Start of code for removal of popup div upon button click
+// const solicit = document.getElementById("targetDiv");
+
+
+// solicit.addEventListener("click", function(event) {
+//     solicit.classList.remove("popup");
+//     solicit.classList.add("show");
+
+// });
+
+/* Start of logic for online estimate*/
+
+// var x = 5;
+// var y = 6;
+
+// function estimate() {
+
+//     var result = x + y;
+//     return result;
+// }
+// estimate()
+// console.log(estimate);

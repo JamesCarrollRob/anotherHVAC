@@ -26,6 +26,8 @@
     
     .introDiv2 {
         background-color: rgba(160, 147, 142, 0.404);
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
     .introDiv h1 {
@@ -133,6 +135,7 @@
     form {
         background-color: lightgray;
         border: solid black;
+        padding: 2em;
     }
     /* responsive design */
     
