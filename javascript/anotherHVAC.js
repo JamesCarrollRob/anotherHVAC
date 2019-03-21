@@ -7,7 +7,7 @@ console.log("test message 1");
 /***Simple animation at top of page using jquery using the setInterval method***/
 setInterval(function() {
     $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000);
-}, 7000);
+}, 5000);
 
 
 
@@ -27,7 +27,7 @@ advertise.addEventListener("click", function(event) {
 });
 
 
-
+///**************JUNK UNUSED FAILED CODE TO COME BACK TO LATER *************////
 // Function targets advertisement and makes it dissapear on button click 
 $("#popupGone").click(function() {
     $("#targetDiv").hide();

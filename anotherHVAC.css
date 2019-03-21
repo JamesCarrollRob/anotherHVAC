@@ -7,21 +7,25 @@
         font-size: 40px;
         border-bottom: solid black;
         padding: 2em;
+        padding-bottom: 1em;
+        width: 100%
     }
     
     .titleBanner aside {
         font-size: 20px;
     }
-    
-    .mainContent {
+    /* .mainContent {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
+    } */
     
     .introDiv {
-        background-image: url("images/team.jpg");
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/team.jpg");
         background-size: contain;
+        color: white;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
     .introDiv2 {
@@ -91,7 +95,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 10px;
-        /* visibility: hidden; */
+        z-index: 2;
     }
     
     .show {
@@ -124,6 +128,13 @@
         margin: 15px;
     }
     
+    .estimate {
+        background-image: url("images/under-construction.jpg");
+        background-size: contain;
+        padding: 10em;
+        color: aliceblue;
+    }
+    
     #hiddenMessage {
         color: chartreuse;
     }
@@ -139,7 +150,7 @@
     }
     /* responsive design */
     
-    @media only screen and (max-device-width: 600px) {
+    @media only screen and (max-device-width: 768px) {
         .services {
             flex-direction: column;
             background-color: rgb(63, 9, 19);
@@ -158,5 +169,10 @@
         .footer-links li {
             display: flex;
             flex-direction: column;
+        }
+        .introDiv,
+        .introDiv2 p {
+            padding-left: 3em;
+            padding-right: 3em;
         }
     }
