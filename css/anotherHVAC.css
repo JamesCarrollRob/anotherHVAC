@@ -1,7 +1,6 @@
     /**** class selectors start here ****/
     
     .titleBanner {
-        /* background-color: rgb(150, 24, 47); */
         background: radial-gradient(#3f5efb, #880909, #fc466b);
         text-align: center;
         text-shadow: rgb(122, 218, 13) 1px 0 10px;
@@ -106,10 +105,6 @@
     
     .show {
         border: solid red;
-    }
-    
-    .card {
-        background-color: goldenrod;
     }
     
     .card-columns {

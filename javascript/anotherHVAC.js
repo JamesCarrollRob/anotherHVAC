@@ -5,7 +5,7 @@ console.log("test message 1");
 
 
 /***Simple animation at top of page using jquery and utilizing the setInterval method***/
-setInterval(function() {
+setInterval(function animate() {
     $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000);
 }, 5000);
 
@@ -17,7 +17,7 @@ setInterval(function() {
 //**** Introdiv2 is hidden until area is clicked.***/
 const advertise = document.getElementById("message")
 
-advertise.addEventListener("click", function(event) {
+advertise.addEventListener("click", function changeDiv(event) {
 
 
     advertise.classList.remove("introDiv");
@@ -29,7 +29,7 @@ advertise.addEventListener("click", function(event) {
 
 
 // Function targets advertisement and makes it dissapear on button click 
-$("#popupGone").click(function() {
+$("#popupGone").click(function remove() {
     $("#targetDiv").hide();
 });
 
