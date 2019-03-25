@@ -1,3 +1,5 @@
+    /**** class selectors start here ****/
+    
     .titleBanner {
         /* background-color: rgb(150, 24, 47); */
         background: radial-gradient(#3f5efb, #880909, #fc466b);
@@ -14,11 +16,8 @@
     .titleBanner aside {
         font-size: 20px;
     }
-    /* .mainContent {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    } */
+    /**** This div is targeted by javascript with a listening event ****/
+    /**** The class is changed to introDiv2 upon click ****/
     
     .introDiv {
         background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/team.jpg");
@@ -37,9 +36,7 @@
     .introDiv h1 {
         text-align: center;
     }
-    /* li {
-    display: flex;
-} */
+    /********************/
     
     .services {
         text-align: center;
@@ -89,6 +86,7 @@
         /* padding-top: 2em;
     padding-bottom: 2em; */
     }
+    /**** popup div selector targeted by javascript ****/
     
     .popup {
         border: solid black;
@@ -104,6 +102,7 @@
         color: gold;
         text-shadow: black 1px 0px 10px;
     }
+    /************/
     
     .show {
         border: solid red;
@@ -149,6 +148,9 @@
     .contactDiv h1 {
         color: rgb(198, 230, 17);
     }
+    /**** End of class selectors ****/
+    /*******************************/
+    /**** Start of id selectors ****/
     
     #hiddenMessage {
         color: chartreuse;
@@ -159,6 +161,9 @@
         color: gold;
         text-shadow: black 1px 0px 10px;
     }
+    /**** End of id selectors ****/
+    /****************************/
+    /**** Start of tag selectors ****/
     
     h1 {
         text-align: center;
@@ -169,7 +174,9 @@
         border: solid black;
         padding: 2em;
     }
-    /* responsive design section */
+    /**** End of tag selectors ****/
+    /****************************/
+    /**** Responsive design section ****/
     
     @media only screen and (max-width: 768px) {
         .services {
@@ -197,6 +204,8 @@
             padding-right: 3em;
         }
     }
+    /****Targeting strictly the images in the services section ****/
+    /****This fixes the left and right images overflowing at several breakpoints****/
     
     @media only screen and (max-width: 375px) {
         .image-wrapper img {
