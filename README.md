@@ -15,6 +15,7 @@ The JavaScript for the site is pretty simple. I utilized jquery for some functio
 1. setInterval(function animate() { $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000); }, 5000);
 
 Another function on the main page uses a click event to change the backgound color of a div by removing and adding a class:
+
 2. const advertise = document.getElementById("message")
 advertise.addEventListener("click", function changeDiv(event) {
 advertise.classList.remove("introDiv");
@@ -22,4 +23,5 @@ advertise.classList.add("introDiv2");
 });
 
 A third function on the main page uses jquery and targets a button click event and simply removes a popup:
+
 3. $("#popupGone").click(function remove() { $("#targetDiv").hide(); });
