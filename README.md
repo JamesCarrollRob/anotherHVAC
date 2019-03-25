@@ -11,11 +11,15 @@ There are about seventeen custom css classes for the site, along with css which 
     3. .estimate { background-image: url("../images/under-construction.jpg"); background-size: contain; padding: 10em; color: aliceblue; }
     
 Custom JavaScript Functions:
-The JavaScript for the site is pretty simple. I utilized jquery for some functions. Both files print a "test" message to the console log to insure the page is linked properly. The main JavaScript function is a neat animation targeting an element using jquery and the setInterval method: setInterval(function animate() { $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000); }, 5000);
-Another function on the main page uses a click event to change the backgound color of a div by removing and adding a class: const advertise = document.getElementById("message")
+The JavaScript for the site is pretty simple. I utilized jquery for some functions. Both files print a "test" message to the console log to insure the page is linked properly. The main JavaScript function is a neat animation targeting an element using jquery and the setInterval method:
+1. setInterval(function animate() { $("#hiddenMessage").hide(3000).fadeIn().delay(3000).slideUp(2000); }, 5000);
+
+Another function on the main page uses a click event to change the backgound color of a div by removing and adding a class:
+2. const advertise = document.getElementById("message")
 advertise.addEventListener("click", function changeDiv(event) {
 advertise.classList.remove("introDiv");
 advertise.classList.add("introDiv2");
 });
 
-A third function on the main page uses jquery and targets a button click event and simply removes a popup: $("#popupGone").click(function remove() { $("#targetDiv").hide(); });
+A third function on the main page uses jquery and targets a button click event and simply removes a popup:
+3. $("#popupGone").click(function remove() { $("#targetDiv").hide(); });
