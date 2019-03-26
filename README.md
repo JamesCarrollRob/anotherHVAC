@@ -25,3 +25,11 @@ advertise.classList.add("introDiv2");
 A third function on the main page uses jquery and targets a button click event and simply removes a popup:
 
 3. $("#popupGone").click(function remove() { $("#targetDiv").hide(); });
+
+A fourth function is linked to the contact page and simply opens an alert window when the submit button is clicked:
+$("#formSubmit").click(function() {
+
+    alert("thanks for submiting!");
+    // $("#serviceForm").hide();
+
+});

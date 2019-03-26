@@ -9,6 +9,6 @@ console.log("File is linked!");
 $("#formSubmit").click(function() {
 
     alert("thanks for submiting!");
-    // $("#serviceForm").hide();
+
 
 });
